@@ -5,7 +5,7 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 fpm -s dir -t deb --force \
 	-n pve-fake-subscription \
 	--description "Pollute the subscription cache of Proxmox VE (>=5.0), Proxmox Mail Gateway (>=5.0) & Proxmox Backup Server (>=1.0) so it won't alert you on dashboard login" \
-	--url "https://github.com/Jamesits/pve-fake-subscription" \
+	--url "https://github.com/sbennell/pve-fake-subscription/" \
 	-v 0.0.7-1 \
 	--license "GLWTS(Good Luck With That Shit) Public License" \
 	--depends "python3" \

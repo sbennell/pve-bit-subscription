@@ -38,7 +38,7 @@ def generate_subscription_pve_pmg(key: str, server_ids: List[str]) -> str:
         "status": "Active",
         "key": key,
         "validdirectory": ",".join(server_ids),
-        "productname": "Bennell It Support",
+        "productname": "Bennell IT Support Plan",
         "regdate": get_timestamp(),
         "nextduedate": 2147483647,
     }
@@ -77,11 +77,11 @@ def generate_subscription_pbs(key: str, server_ids: List[str]) -> str:
         "serverid": ",".join(server_ids),
         "checktime": get_timestamp(),
         "key": key,
-        "message": "Bennell IT Support",
-        "productname": "Bennell IT Support",
+        "message": "Bennell IT has got your back",
+        "productname": "Bennell IT Support Plan",
         "regdate": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "nextduedate": (datetime.now() + timedelta(seconds=1296000)).strftime("%Y-%m-%d"), # 1296000: MAX_LOCAL_KEY_AGE in src/tools/subscription.rs
-        "url": "https://github.com/Jamesits/pve-fake-subscription",
+        "url": "https://www.bennellit.com.au/",
     }
 
     data = base64.standard_b64encode(json.dumps(localinfo).encode()).decode()

@@ -18,7 +18,7 @@ Highlights:
 
 ## Installation
 
-1. [Download the latest release](https://github.com/Jamesits/pve-fake-subscription/releases/latest)
+1. [Download the latest release](https://github.com/sbennell/pve-fake-subscription/releases/latest)
 1. Install: run `dpkg -i pve-fake-subscription_*.deb` as root on every node
 1. (Optional) `echo "127.0.0.1 shop.maurer-it.com" | sudo tee -a /etc/hosts` to prevent fake keys from being checked against the Proxmox servers
 

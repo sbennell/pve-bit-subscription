@@ -1,0 +1,7 @@
+[Unit]
+Description=Bennell IT Proxmox VE subscription
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pve-bit-subscription
+

@@ -1,7 +1,0 @@
-[Unit]
-Description=Fake a Proxmox VE subscription
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/pve-fake-subscription
-

@@ -6,7 +6,7 @@ fpm -s dir -t deb --force \
 	-n pve-bennellit-subscription \
 	--description "Pollute the subscription cache of Proxmox VE (>=5.0), Proxmox Mail Gateway (>=5.0) & Proxmox Backup Server (>=1.0) so it won't alert you on dashboard login" \
 	--url "https://www.bennellit.com.au" \
-	-v 0.0.8 \
+	-v 1.0.0 \
 	--license "GLWTS(Good Luck With That Shit) Public License" \
 	--depends "python3" \
 	--architecture all \

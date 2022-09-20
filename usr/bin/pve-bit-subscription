@@ -84,7 +84,7 @@ def generate_subscription_pbs(key: str, server_ids: List[str]) -> str:
         "productname": "Bennell IT Support Plan",
         "regdate": dt_string("%Y-%m-%d %H:%M:%S"),
         "nextduedate": dt_string("%Y-%m-%d", 1296000), # 1296000: MAX_LOCAL_KEY_AGE in src/tools/subscription.rs
-        "url": "https://www.ennellit.com.au",
+        "url": "https://www.bennellit.com.au",
     }
 
     data = base64.standard_b64encode(json.dumps(localinfo).encode()).decode()

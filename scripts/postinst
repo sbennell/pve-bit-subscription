@@ -5,16 +5,16 @@ after_upgrade() {
 
     systemctl --system daemon-reload >/dev/null || true
     debsystemctl=$(command -v deb-systemd-invoke || echo systemctl)
-    if ! systemctl is-enabled pve-fake-subscription.timer >/dev/null
+    if ! systemctl is-enabled pve-bit-subscription.timer >/dev/null
     then
     : # Ensure this if-clause is not empty. If it were empty, and we had an 'else', then it is an error in shell syntax
-        systemctl preset pve-fake-subscription.timer >/dev/null || true
-        $debsystemctl start pve-fake-subscription.timer >/dev/null || true
+        systemctl preset pve-bit-subscription.timer >/dev/null || true
+        $debsystemctl start pve-bit-subscription.timer >/dev/null || true
     else
-        $debsystemctl restart pve-fake-subscription.timer >/dev/null || true
+        $debsystemctl restart pve-bit-subscription.timer >/dev/null || true
     fi
 
-    pve-fake-subscription
+    pve-bit-subscription
 }
 
 after_install() {
@@ -22,10 +22,10 @@ after_install() {
 
     systemctl --system daemon-reload >/dev/null || true
     debsystemctl=$(command -v deb-systemd-invoke || echo systemctl)
-    systemctl preset pve-fake-subscription.timer >/dev/null || true
-    $debsystemctl start pve-fake-subscription.timer >/dev/null || true
+    systemctl preset pve-bit-subscription.timer >/dev/null || true
+    $debsystemctl start pve-bit-subscription.timer >/dev/null || true
 
-    pve-fake-subscription
+    pve-bit-subscription
 }
 
 if { [ "${1}" = "configure" ] && [ -z "${2}" ]; } || [ "${1}" = "abort-remove" ]; then

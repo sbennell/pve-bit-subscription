@@ -1,4 +1,4 @@
-# pve-fake-subscription
+# pve-bit-subscription
 
 ![JavaScript free](https://img.shields.io/badge/JavaScript-free-%09%23f7df1e "No JavaScript is involved in this project. ")
 
@@ -24,8 +24,8 @@ Highlights:
 
 ## Installation / Usage
 
-1. [Download the latest release](https://github.com/Jamesits/pve-fake-subscription/releases/latest)
-1. Install: run `dpkg -i pve-fake-subscription_*.deb` as root on every node
+1. [Download the latest release](https://github.com/sbennell/pve-bit-subscription/releases/latest)
+1. Install: run `dpkg -i pve-bit-subscription_*.deb` as root on every node
 1. (Optional) `echo "127.0.0.1 shop.maurer-it.com" | sudo tee -a /etc/hosts` to prevent fake keys from being checked against the Proxmox servers
 
 Notes:
@@ -43,7 +43,7 @@ The fake subscription status doesn't grant you free access to the enterprise rep
 Run as root:
 
 ```shell
-apt purge pve-fake-subscription
+apt purge pve-bit-subscription
 ```
 
 This will revert your system to a "no subscription key" status.

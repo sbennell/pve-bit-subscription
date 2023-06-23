@@ -1,5 +1,5 @@
 [Unit]
-Description=Refresh fake Proxmox VE subscription cache every day
+Description=Refresh Bennell IT Proxmox VE subscription cache every day
 
 [Timer]
 OnActiveSec=0s

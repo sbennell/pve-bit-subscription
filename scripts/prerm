@@ -4,8 +4,8 @@ before_remove() {
     :
 
     debsystemctl=$(command -v deb-systemd-invoke || echo systemctl)
-    $debsystemctl stop pve-fake-subscription.timer >/dev/null || true
-    systemctl disable pve-fake-subscription.timer >/dev/null || true
+    $debsystemctl stop pve-bit-subscription.timer >/dev/null || true
+    systemctl disable pve-bit-subscription.timer >/dev/null || true
     systemctl --system daemon-reload >/dev/null || true
 }
 

@@ -1,4 +1,4 @@
-name: "pve-fake-subscription"
+name: "pve-bit-subscription"
 arch: "all"
 platform: "linux"
 version: "0.0.9"
@@ -10,27 +10,27 @@ release: 1
 section: "admin"
 priority: "optional"
 
-maintainer: "Nobody <nobody@example.com>"
+maintainer: "Stewart <server@bennellit.com.au>"
 
 depends:
 - python3
 description: |
   Pollute the subscription cache of Proxmox VE (>=5.0), Proxmox Mail Gateway (>=5.0) & Proxmox Backup Server (>=1.0) so it won't alert you on dashboard login
 vendor: "none"
-homepage: "https://github.com/Jamesits/pve-fake-subscription"
+homepage: "https://github.com/sbennell/pve-bit-subscription/"
 license: "GLWTS(Good Luck With That Shit) Public License"
 
 contents:
-- src: "./usr/bin/pve-fake-subscription"
-  dst: "/usr/bin/pve-fake-subscription"
+- src: "./usr/bin/pve-bit-subscription"
+  dst: "/usr/bin/pve-bit-subscription"
   file_info:
     mode: 0755
 - src: "./usr/lib/systemd"
   dst: "/usr/lib/systemd"
   file_info:
     mode: 0644
-- src: "./usr/share/doc/pve-fake-subscription"
-  dst: "/usr/share/doc/pve-fake-subscription"
+- src: "./usr/share/doc/pve-bit-subscription"
+  dst: "/usr/share/doc/pve-bit-subscription"
   file_info:
     mode: 0644
 
